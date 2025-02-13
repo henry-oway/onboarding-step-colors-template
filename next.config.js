@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for static export
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '', // Add this if you're not using a custom domain
+  basePath: process.env.NODE_ENV === 'production' ? '/onboarding-step-colors-template' : '',
 }
 
 module.exports = nextConfig;
