@@ -6,6 +6,7 @@ const nextConfig = {
   },
   basePath: process.env.NODE_ENV === 'production' ? '/onboarding-step-colors-template' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/onboarding-step-colors-template/' : '',
+  trailingSlash: true
 }
 
 module.exports = nextConfig
