@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'export',  // Enable static exports
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static export
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/onboarding-step-colors-template' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/onboarding-step-colors-template/' : '',
-  trailingSlash: true
+  basePath: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '', // Add this if you're not using a custom domain
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
