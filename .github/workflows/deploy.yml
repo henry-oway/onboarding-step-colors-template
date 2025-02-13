@@ -25,8 +25,18 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Debug - List build output
+        run: |
+          echo "Contents of ./out directory:"
+          ls -la ./out
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out 
+          publish_dir: ./out
+
+      - name: Debug - Print deployment info
+        run: |
+          echo "Deployed to gh-pages branch"
+          echo "Site should be available at https://henry-oway.github.io/onboarding-step-colors-template/" 
